@@ -2,7 +2,7 @@ from flask import Flask, url_for
 
 from auth import auth_blueprint
 from tasks import tasks_blueprint
-from users import users_blueprint
+from users.router import users_blueprint
 
 app = Flask(__name__)
 app.register_blueprint(tasks_blueprint, url_prefix='/tasks')
