@@ -34,7 +34,3 @@ def site_map():
             links_normalized[-1] = f"<a href=http://localhost:8000{link[0]}>{link[1]} <- you are here</a>"
     links_normalized = "<br>".join(links_normalized)
     return f"<h1>Site Map</h1>\n<p>{links_normalized}</p>", 200
-
-
-if __name__ == "__main__":
-    app.run(debug=True)
