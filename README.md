@@ -10,16 +10,11 @@ Sample project to practice backend concepts learned in the "Back End Architectur
 ## How to use
 
 ### Using docker:
-Build the image with the command:
+Run the command::
 ```sh
-docker build -t todolistapi .
-```
-
-Run the image docker using the command:
-```sh
-docker run -dp 5000:5000 todolistapi
+docker-compose up
 ```
 
 The server must be started and can be accessed at the link:
 
-[http://localhost:5000/](http://localhost:5000/)
+[http://localhost:8000/](http://localhost:8000/)
