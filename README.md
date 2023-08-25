@@ -7,10 +7,14 @@ Sample project to practice backend concepts learned in the "Back End Architectur
 - Flask
 - REST/HTTP
 
+## Infra
+- Docker
+- Docker-compose
+
 ## How to use
 
-### Using docker:
-Run the command::
+### Using docker-compose:
+Run the command:
 ```sh
 docker-compose up
 ```

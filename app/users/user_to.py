@@ -1,30 +1,31 @@
 import uuid
 
-class User:
+from app.tasks.models import Task
+
+class UserTO:
     id:uuid.UUID
     name:str
     username:str
-    password:str
+    tasks:Task
 
-    def __init__(self, name, username, password):
-        self.id = uuid.uuid4()
+    def __init__(self, id, name, username, tasks=None):
+        self.id = id
         self.name = name
         self.username = username
-        self.password = password
-
-
+        self.tasks = tasks
+    
     def __repr__(self):
-        return f"<User {self.username}>"
+        return f"<UserTO {self.username}>"
 
     def to_dict(self):
         return {
             "id": self.id,
             "name": self.name,
             "username": self.username,
-            "password": self.password
+            "tasks": self.tasks
         }
 
     def from_dict(self, data):
-        for field in ["name", "username", "password"]:
+        for field in ["id", "name", "username", "tasks"]:
             if field in data:
                 setattr(self, field, data[field])
