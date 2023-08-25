@@ -22,3 +22,7 @@ docker-compose up
 The server must be started and can be accessed at the link:
 
 [http://localhost:8000/](http://localhost:8000/)
+
+## CONTRIBUTING
+
+See the [CONTRIBUTING.md](CONTRIBUTING.md) file
